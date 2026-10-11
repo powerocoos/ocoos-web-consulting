@@ -16,3 +16,22 @@ var d=document.createElement('div');d.className='ocb-cta';
 d.innerHTML='<h3>Need help with your website or Google Ads?</h3><p>Ocoos Web Consulting builds, repairs and promotes websites for Ocala and Gainesville businesses. Talk to a real person today.</p><div class="row"><a class="ocb-btn l" href="tel:+13523278554">Call (352) 327-8554</a><a class="ocb-btn g" href="/contact">Get a free consultation</a></div>';
 c.appendChild(d)}catch(e){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();})();
+
+/* Digital Advertising page */
+if(document.querySelector('.oda')){
+(function(){
+  var root=document.documentElement; root.classList.add('oda-js');
+  var ds=document.querySelectorAll('.oda #faq details');
+  ds.forEach(function(d){d.addEventListener('toggle',function(){if(d.open)ds.forEach(function(o){if(o!==d)o.open=false})})});
+  var rv=document.querySelectorAll('.oda .rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    rv.forEach(function(el){io.observe(el)});
+  }else{rv.forEach(function(el){el.classList.add('in')})}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('.oda [data-ev]'); if(!a)return;
+    try{window.gtag&&gtag('event',a.getAttribute('data-ev'),{event_category:'da_page'})}catch(x){}
+    try{(window.dataLayer=window.dataLayer||[]).push({event:a.getAttribute('data-ev')})}catch(x){}
+  });
+})();
+}
