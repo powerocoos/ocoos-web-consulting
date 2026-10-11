@@ -1,0 +1,18 @@
+/* Ocoos Web Consulting - site-wide scripts. Each block guards itself so it only acts on its own page type. */
+/* ---- Blog list ---- */
+document.addEventListener('DOMContentLoaded',function(){try{
+var g=document.querySelector('.blog-basic-grid'); if(!g)return;
+var h=document.querySelector('main .page-section h1'); if(!h)return;
+h.closest('.page-section').classList.add('ocb-banner');
+if(!document.querySelector('.ocb-sub')){var p=document.createElement('p');p.className='ocb-sub';p.textContent='Web design, SEO and Google Ads tips for Ocala and Gainesville businesses.';h.insertAdjacentElement('afterend',p)}
+}catch(e){}});
+/* ---- Blog post ---- */
+(function(){function go(){try{var c=document.querySelector('.blog-item-content'); if(!c||document.getElementById('ocb-progress'))return;
+var b=document.createElement('div');b.id='ocb-progress';document.body.appendChild(b);
+var art=document.querySelector('.blog-item-wrapper')||c;
+function up(){var r=art.getBoundingClientRect(),h=r.height-innerHeight;var p=h>0?Math.min(1,Math.max(0,-r.top/h)):0;b.style.width=(p*100)+'%'}
+addEventListener('scroll',up,{passive:true});addEventListener('resize',up);up();
+var d=document.createElement('div');d.className='ocb-cta';
+d.innerHTML='<h3>Need help with your website or Google Ads?</h3><p>Ocoos Web Consulting builds, repairs and promotes websites for Ocala and Gainesville businesses. Talk to a real person today.</p><div class="row"><a class="ocb-btn l" href="tel:+13523278554">Call (352) 327-8554</a><a class="ocb-btn g" href="/contact">Get a free consultation</a></div>';
+c.appendChild(d)}catch(e){}}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();})();
