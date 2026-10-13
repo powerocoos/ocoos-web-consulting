@@ -161,3 +161,7 @@ body:has(#occ-b) .sqs-block-form{padding:20px 18px 14px}
 .page-section:has(.occ) .fluid-engine{display:block!important}
 .page-section:has(.occ) .fe-block{display:block!important;width:100%!important}
 .page-section:has(.sqs-block-form){min-height:0!important;padding-top:90px!important;padding-bottom:40px!important}
+
+/* contact form: stay inside its column on phones */
+body:has(#occ-b) .sqs-block-form{box-sizing:border-box!important;width:100%!important;max-width:100%!important}
+body:has(#occ-b) .sqs-block-form *{box-sizing:border-box;max-width:100%}
