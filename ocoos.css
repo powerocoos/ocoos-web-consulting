@@ -186,3 +186,7 @@ body:has(#occ-b) .sqs-block-form *{box-sizing:border-box;max-width:100%}
 html body .oda#oda-s{padding-bottom:0!important}
 .oda#oda-s .cta{padding-bottom:64px!important}
 }
+
+#oda-s .hero{padding-top:var(--header-height,134px)}
+#oda-s .hero .wrap{padding-top:64px}
+@media(max-width:820px){#oda-s .hero .wrap{padding-top:36px}}
