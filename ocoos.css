@@ -116,3 +116,42 @@ html body .oda#oda-b{padding-bottom:0!important}
 .oda .cta#consult{padding-bottom:64px!important}
 body:has(#callBar) .ocf .bar .in{padding-bottom:78px!important}
 }
+
+/* ===== Contact page (.occ) ===== */
+.fe-block:has(.occ){grid-column:1/-1!important}
+.occ{--b:#155387;--bd:#0f3f67;--bl:#e8f0f7;--ink:#1d2430;box-sizing:border-box;width:100%;padding:72px 24px 80px;background:var(--bl);color:var(--ink);text-align:left}
+.occ *{box-sizing:border-box}
+.occ .in{max-width:1100px;margin:0 auto}
+.occ h2{font-size:clamp(28px,4vw,40px)!important;line-height:1.15!important;color:var(--bd)!important;margin:0 0 12px!important;text-align:center!important;text-transform:none!important;letter-spacing:0!important}
+.occ .sub{margin:0 auto 36px!important;max-width:620px;text-align:center;font-size:18px!important;line-height:1.5!important;color:var(--ink)!important}
+.occ ol{list-style:none!important;margin:0!important;padding:0!important;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.occ li{background:#fff;border-radius:16px;padding:28px;box-shadow:0 6px 24px rgba(15,63,103,.08);margin:0!important}
+.occ .n{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--b);color:#fff;font-weight:600;font-size:18px;margin-bottom:14px}
+.occ h3{font-size:20px!important;line-height:1.25!important;margin:0 0 8px!important;color:var(--bd)!important;text-transform:none!important;letter-spacing:0!important}
+.occ li p{margin:0!important;font-size:16px!important;line-height:1.55!important;color:var(--ink)!important}
+.occ .cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;margin-top:36px;padding:28px 32px;border-radius:16px;color:#fff;background:radial-gradient(circle at 85% 15%,rgba(159,208,255,.45) 0,rgba(159,208,255,0) 45%),linear-gradient(120deg,#0b2d4d 0%,#155387 50%,#2a85c9 100%)}
+.occ .cta .t{flex:1 1 260px}
+.occ .cta .t strong{display:block;font-size:22px;line-height:1.25;color:#fff}
+.occ .cta .t span{display:block;margin-top:4px;font-size:16px;color:#dbe9f6}
+.occ .btns{display:flex;flex-wrap:wrap;gap:12px}
+.occ a.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-size:17px;font-weight:600;line-height:1.2;text-decoration:none!important;text-align:center;border:2px solid #fff;transition:transform .15s ease}
+.occ a.btn:hover{transform:translateY(-2px)}
+.occ a.btn.p{background:#fff;color:var(--bd)!important}
+.occ a.btn.s{background:transparent;color:#fff!important}
+.occ a.btn:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+.occ .trust{list-style:none!important;margin:28px 0 0!important;padding:0!important;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 14px}
+.occ .trust li{background:#fff;border-radius:999px;padding:8px 16px;font-size:15px;font-weight:500;color:var(--bd);box-shadow:none;margin:0!important}
+.occ #callBar{display:none}
+body:has(#occ-b) .sqs-block-form{background:#fff;border-radius:16px;padding:28px 28px 20px;box-shadow:0 8px 30px rgba(15,63,103,.12)}
+body:has(#occ-b) .sqs-block-form .form-button-wrapper,body:has(#occ-b) .sqs-block-form .form-button-wrapper button{width:100%}
+body:has(#occ-b) .sqs-block-form button[type=submit]{font-size:18px;padding:18px 24px}
+@media(max-width:900px){.occ ol{grid-template-columns:1fr}.occ{padding:56px 20px 72px}}
+@media(max-width:600px){
+.occ .cta{padding:24px 20px}
+.occ .btns{width:100%}
+.occ a.btn{flex:1 1 100%}
+.occ #callBar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;box-shadow:0 -4px 18px rgba(0,0,0,.18)}
+.occ #callBar a{flex:1;display:block;padding:14px 10px;border-radius:999px;background:var(--b);color:#fff!important;font-size:17px;font-weight:600;text-align:center;text-decoration:none!important}
+.occ #callBar a.alt{background:#fff;color:var(--b)!important;border:2px solid var(--b)}
+body:has(#occ-b) .sqs-block-form{padding:20px 18px 14px}
+}
