@@ -35,3 +35,11 @@ if(document.querySelector('.oda')){
   });
 })();
 }
+(function(){
+if(!document.querySelector('.occ'))return;
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('.occ [data-ev]'); if(!a)return;
+  try{window.gtag&&gtag('event',a.getAttribute('data-ev'),{event_category:'contact_page'})}catch(x){}
+  try{(window.dataLayer=window.dataLayer||[]).push({event:a.getAttribute('data-ev')})}catch(x){}
+});
+})();
