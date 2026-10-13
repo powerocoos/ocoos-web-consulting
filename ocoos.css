@@ -155,3 +155,9 @@ body:has(#occ-b) .sqs-block-form button[type=submit]{font-size:18px;padding:18px
 .occ #callBar a.alt{background:#fff;color:var(--b)!important;border:2px solid var(--b)}
 body:has(#occ-b) .sqs-block-form{padding:20px 18px 14px}
 }
+
+/* contact page spacing */
+.page-section:has(.occ){min-height:0!important}
+.page-section:has(.occ) .fluid-engine{display:block!important}
+.page-section:has(.occ) .fe-block{display:block!important;width:100%!important}
+.page-section:has(.sqs-block-form){min-height:0!important;padding-top:90px!important;padding-bottom:40px!important}
