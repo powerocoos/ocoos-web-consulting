@@ -72,3 +72,15 @@ document.addEventListener('click',function(e){
     });
   }catch(e){}
 })();
+
+
+/* ===== Website design landing page: tag the form section as the #oc-quote anchor ===== */
+(function(){
+  function go(){try{
+    if(!document.getElementById('oda-w'))return;
+    var f=document.querySelector('main .page-section form');
+    var s=f&&f.closest('.page-section'); if(!s||s.id==='oc-quote')return;
+    s.id='oc-quote'; s.classList.add('oc-quote-band');
+  }catch(e){}}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+})();
