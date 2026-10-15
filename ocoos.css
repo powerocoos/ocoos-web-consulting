@@ -267,7 +267,7 @@ html body .oda#oda-w{width:100%;margin-left:0;padding-bottom:0!important}
 
 /* hero: the native form section, restyled */
 #oc-quote{scroll-margin-top:calc(var(--header-height,134px) + 8px)}
-body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"]{background:radial-gradient(circle at 82% 18%,rgba(42,133,201,.55) 0,rgba(42,133,201,0) 55%),linear-gradient(120deg,#0b2d4d 0%,#155387 100%)!important;min-height:0!important;padding-top:calc(var(--header-height,134px) + 48px)!important;padding-bottom:72px!important}
+body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"]{background:linear-gradient(180deg,rgba(11,45,77,.94) 0%,rgba(13,56,94,.86) 38%,rgba(21,83,135,.40) 100%),url("https://images.squarespace-cdn.com/content/v1/5dc50cc1afeeeb552425247c/1586591751365-W4G0K19XRASTA452Z8MM/Ocala_downtown_2011-min.jpg?format=2500w") 30% 80%/cover no-repeat #0e3c63!important;min-height:0!important;padding-top:calc(var(--header-height,134px) + 48px)!important;padding-bottom:72px!important}
 body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] :is(.section-border,.section-divider){display:none!important}
 body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .fe-block:nth-child(1) .sqs-block{background:transparent!important;border:0!important;box-shadow:none!important}
 body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .fe-block:nth-child(1) h1{font-family:Poppins,sans-serif!important;color:#fff!important;text-transform:none!important;font-size:clamp(34px,4.6vw,56px)!important;line-height:1.12!important;font-weight:700!important;letter-spacing:-.02em!important;text-align:left!important;margin:0 0 20px!important}
@@ -286,3 +286,7 @@ body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .f
 .fe-6661fc3ef68d69fab54c7469{grid-template-rows:repeat(22,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)),auto))!important}
 .fe-block-yui_3_17_2_1_1717697054067_7384{grid-area:5/16/23/26!important}
 }
+
+/* hero photo (downtown Ocala horse): keep it visible on phones, white submit label */
+@media(max-width:767px){body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"]{background-position:0 0,24% 100%!important}}
+body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .fe-block:nth-child(3) button[type=submit],body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .fe-block:nth-child(3) button[type=submit] *{color:#fff!important}
