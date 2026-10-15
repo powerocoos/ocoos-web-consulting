@@ -288,5 +288,5 @@ body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .f
 }
 
 /* hero photo (downtown Ocala horse): keep it visible on phones, white submit label */
-@media(max-width:767px){body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"]{background-position:0 0,24% 100%!important}}
+@media(max-width:767px){html body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"][data-section-id]{background-size:100% 100%,auto 560px!important;background-position:0 0,22% 100%!important;background-repeat:no-repeat!important;padding-bottom:300px!important}}
 body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .fe-block:nth-child(3) button[type=submit],body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .fe-block:nth-child(3) button[type=submit] *{color:#fff!important}
