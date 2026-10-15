@@ -280,3 +280,9 @@ body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .f
 body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .fe-block:nth-child(3) :is(input[type=text],input[type=email],input[type=tel],textarea,select){background:#fff!important;border:1px solid #c3d2e1!important;border-radius:8px!important;color:#1d2430!important}
 body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .fe-block:nth-child(3) input[type=checkbox]{appearance:auto!important;-webkit-appearance:checkbox!important;width:18px!important;height:18px!important;accent-color:#155387;opacity:1!important;border:1px solid #155387!important;background:#fff!important}
 body#collection-5e91759d7c981153fda03958 section[data-section-id^="6661fc3e"] .fe-block:nth-child(3) button[type=submit]{background:#155387!important;color:#fff!important;border-radius:10px!important;width:100%}
+
+/* hero form block: keep it directly under its heading on desktop (editor had pushed it down a row set) */
+@media(min-width:768px){
+.fe-6661fc3ef68d69fab54c7469{grid-template-rows:repeat(22,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)),auto))!important}
+.fe-block-yui_3_17_2_1717697054067_7384{grid-area:5/16/23/26!important}
+}
