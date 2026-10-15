@@ -78,8 +78,8 @@ document.addEventListener('click',function(e){
 (function(){
   function go(){try{
     if(!document.getElementById('oda-w'))return;
-    var f=document.querySelector('main .page-section form');
-    var s=f&&f.closest('.page-section'); if(!s||s.id==='oc-quote')return;
+    var w=document.getElementById('oda-w'); var own=w&&w.closest('.page-section');
+    var s=own&&own.previousElementSibling; if(!s||!s.classList.contains('page-section')||s.id==='oc-quote')return;
     s.id='oc-quote'; s.classList.add('oc-quote-band');
   }catch(e){}}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
